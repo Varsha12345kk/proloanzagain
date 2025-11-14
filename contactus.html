@@ -17,7 +17,8 @@
 <!-- Navbar -->
   <header class="navbar">
     <div class="container nav-container">
-      <img src="images/logo.svg" alt="ProloanZ Logo" class="logo" />
+      <a href="index.html">
+  <img src="images/logo.svg" alt="ProloanZ Logo" class="logo" /></a>
       <div class="hamburger">
       <span></span>
       <span></span>
@@ -28,9 +29,13 @@
           <li><a href="index.html">HOME</a></li>
           <li><a href="aboutus.html">ABOUT US</a></li>
    <li class="dropdown">
-  <a href="#">
+    <a href="#" class="dropdown-toggle">
     OUR SERVICES <i class="material-icons">arrow_drop_down</i>
   </a>
+  <!-- <a href="#" class="dropdown-toggle">
+  OUR SERVICES
+  <img src="images/dropdownblack.svg" alt="dropdown arrow" class="dropdown-icon">
+</a> -->
   <ul class="dropdown-menu">
     <li class="loan-option">
       <a href="homeloan.html" class="loan-link">
@@ -68,17 +73,25 @@
       </div>
       </a>
     </li>
-    <!-- <li class="loan-option">
-      <a href="businessloan.html" class="loan-link">
-      <img src="images/business-loan-2.svg" alt="Business Loan Icon 2" />
+    <li class="loan-option">
+      <a href="loanagainstproperty.html" class="loan-link">
+      <img src="images/loan-against-prop.svg" alt="Business Loan Icon 2" />
       <div class="loan-text">
-        <h3>Business Loan</h3>
+        <h3>Loan Against Property</h3>
         <p>Get Up To ₹10L In 10 Mins</p>
       </div>
       </a>
-    </li> -->
+    </li>
+  </ul>
+   <ul class="mobile-dropdown">
+    <li><a href="homeloan.html">Home Loan</a></li>
+    <li><a href="personalloan.html">Personal Loan</a></li>
+    <li><a href="businessloan.html">Business Loan</a></li>
+    <li><a href="educationloan.html">Education Loan</a></li>
+    <li><a href="loanagainstproperty.html">Loan Against Property</a></li>
   </ul>
 </li>
+
           <li><a href="contactus.html" class="signup-btn-outline">CONTACT US</a></li>
         </ul>
       </nav>
@@ -197,7 +210,7 @@
     <div class="enquiry-box">
       <div class="enquiry-left">
         <h2>Enquiry Now</h2>
-        <img src="images/enquire-img.png" alt="Illustration">
+        <img src="images/enquire-img.svg" alt="Illustration">
       </div>
       <div class="enquiry-right">
         <form>
@@ -224,7 +237,8 @@
              <textarea placeholder="Message"></textarea>
           </div>
           <div class="btn-row">
-  <a href="#" class="cta-btn1">SUBMIT</a>
+  <a href="#" class="cta-btn1">
+  <span class="btn-text">SUBMIT</span></a>
       <!-- <span class="circle-icon2 gray">
         <i class="material-icons">north_east</i>
       </span> -->
@@ -239,20 +253,20 @@
       <div class="footer-col row1">
         <h4>Company</h4>
         <ul>
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Contact Us</li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
         </ul>
       </div>
 
       <div class="footer-col row2">
-        <h4>Personal Loans</h4>
+        <h4>Our Services</h4>
         <ul>
-          <li>Wedding Loan</li>
-          <li>Home Renovation</li>
-          <li>NRI Personal Loan</li>
-          <li>Holiday Loan</li>
-          <li>Top Up Loan</li>
+          <li><a href="homeloan.html">Home Loan</a></li>
+          <li><a href="personalloan.html">Personal Loan</a></li>
+         <li><a href="businessloan.html">Business Loan</a></li>
+          <li><a href="educationloan.html">Education Loan</a></li>
+          <li><a href="loanagainstproperty.html">Loan Against Property</a></li>
         </ul>
       </div>
 

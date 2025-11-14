@@ -14,47 +14,6 @@ window.addEventListener("load", () => {
 
 
 
-// document.addEventListener("DOMContentLoaded", () => {
-//   const hamburger = document.querySelector('.hamburger');
-//   const nav = document.querySelector('nav');
-//   const signUpGroup = document.querySelector('.sign-up-group');
-//   const dropdowns = document.querySelectorAll('.dropdown');
-//   if (hamburger) {
-//     hamburger.addEventListener('click', () => {
-//       if (window.innerWidth <= 480) {
-//         nav.classList.toggle('show');
-//         signUpGroup.classList.toggle('show');
-//       }
-//     });}
-// dropdowns.forEach(dropdown => {
-//   const toggle = dropdown.querySelector('.dropdown-toggle');
-//   if (!toggle) return;
-//   toggle.addEventListener('click', e => {
-//     if (window.innerWidth <= 480) {
-//       e.preventDefault();
-//       if (dropdown.classList.contains('open')) {
-//         dropdown.classList.remove('open');
-//       } else {
-//         dropdowns.forEach(d => d.classList.remove('open'));
-//         dropdown.classList.add('open');
-//       }
-//     }
-//   });
-// });
-// // Click outside to close dropdown
-// document.addEventListener('click', e => {
-//   if (window.innerWidth <= 480) {
-//     dropdowns.forEach(dropdown => {
-//       if (!dropdown.contains(e.target)) {
-//         dropdown.classList.remove('open');
-//       }
-//     });
-//   }
-// });
-// });
-
-
-
 const hamburger = document.querySelector('.hamburger');
 const nav = document.querySelector('nav');
 
@@ -68,7 +27,6 @@ navLinks.forEach(link => {
     nav.classList.remove('active');
   });
 });
-
 
 
 
@@ -119,7 +77,6 @@ function verifyCaptcha() {
     return false;
   }
 }
-
 
 
 
@@ -207,4 +164,29 @@ window.addEventListener('DOMContentLoaded', function() {
       currentDelay += nextStepDelay;
     });
   }
+});
+
+
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const dropdownToggle = document.querySelector(".dropdown-toggle");
+    const dropdownMenu = document.querySelector(".dropdown-menu");
+    dropdownToggle.addEventListener("click", function(e) {
+      e.preventDefault(); 
+      dropdownMenu.classList.toggle("show"); 
+    });
+    document.addEventListener("click", function(e) {
+      if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+        dropdownMenu.classList.remove("show");
+      }
+    });
+  });
+
+
+
+  document.querySelector('.dropdown-toggle').addEventListener('click', function (e) {
+  e.preventDefault();
+
+  // Toggle only the mobile dropdown
+  document.querySelector('.mobile-dropdown').classList.toggle('show');
 });

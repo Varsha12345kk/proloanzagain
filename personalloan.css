@@ -84,7 +84,7 @@
     min-height: 45vh;
   }
   .documents-heading {
-    font-size: 2.7rem;
+    font-size: 2.9rem;
     margin-bottom: 1.5rem;
   }
   .documents-row {
@@ -118,6 +118,9 @@
     height: 2rem;
     margin-right: 0.7rem;
   }
+  .documents-right ul li:nth-child(5) img{
+     margin-top:-3vw;
+   }
 }
 
 /* Responsive @media for 768px */

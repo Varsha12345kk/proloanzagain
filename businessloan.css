@@ -122,6 +122,12 @@
     max-height:60vh;
     /* margin-bottom:5vw; */
 }
+ .docsecbusiness .documents-right ul li:nth-child(4) span {
+        line-height:3vw;
+    }
+    .docsecbusiness .documents-right ul li:nth-child(4) img {
+        margin-top:-2.4vw;
+    }
 .steps-section {
   width: 100%;
   text-align: center;
@@ -209,12 +215,12 @@
 .step-box {
   flex: 1;
   border-radius: 1rem;
-  padding: 3vh 6vw;
+  padding: 2vh 3vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  box-shadow: 0 0.8vh 1.2vh 0.8vh rgba(0,0,0,0.15);
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.35);
 }
 .step-box h3 {
   font-size: 1.8rem;
@@ -359,7 +365,7 @@
   }
   .criteria-square {
     width: 3.2rem;
-    height: 2.8rem;
+    height: 3.6rem;
     font-size: 1.2rem;
   }
   .docsecbusiness .documents-right {
@@ -369,6 +375,9 @@
   .docsecbusiness .documents-left img {
     max-height: 50vh;
   }
+  .docsecbusiness .documents-right ul li:nth-child(4) img{
+     margin-top:-8vw;
+   }
  .steps-section {
     padding: 3vh 2.5vw;
     margin-bottom: 6vw;
