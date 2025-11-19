@@ -186,7 +186,42 @@ window.addEventListener('DOMContentLoaded', function() {
 
   document.querySelector('.dropdown-toggle').addEventListener('click', function (e) {
   e.preventDefault();
-
-  // Toggle only the mobile dropdown
   document.querySelector('.mobile-dropdown').classList.toggle('show');
+});
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const stack = document.querySelector(".slate-stack");
+  const slates = Array.from(document.querySelectorAll(".slate"));
+  const prevBtn = document.getElementById("slate-prev");
+  const nextBtn = document.getElementById("slate-next");
+  if (!stack || slates.length === 0 || !prevBtn || !nextBtn) return;
+  let order = [0, 1, 2, 3, 4]; 
+  function applyPositions() {
+    slates.forEach((slate) => {
+      slate.classList.remove(
+        "slate-pos-0",
+        "slate-pos-1",
+        "slate-pos-2",
+        "slate-pos-3",
+        "slate-pos-4");
+    });
+    order.forEach((slateIndex, pos) => {
+      const slate = slates[slateIndex];
+      slate.classList.add(`slate-pos-${pos}`);
+    });}
+  function nextSlate() {
+    const first = order.shift();
+    order.push(first);
+    applyPositions();}
+  function prevSlate() {
+    const last = order.pop();
+    order.unshift(last);
+    applyPositions();
+  }
+  nextBtn.addEventListener("click", nextSlate);
+  prevBtn.addEventListener("click", prevSlate);
+  applyPositions();
 });
