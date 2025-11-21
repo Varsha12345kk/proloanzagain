@@ -241,7 +241,7 @@ body {
 .hero-text h1:first-of-type {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 52px;
-  margin-bottom: 8px;
+  margin-bottom: -11px;
   font-weight: 500;
   color: #002bdc;
 }
