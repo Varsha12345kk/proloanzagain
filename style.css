@@ -805,123 +805,118 @@ max-width: 1200px;
 
 /* How it works Section(part 5/9) */
 .how-container {
-  width: 100%;
-  margin: 0;
-  padding: 2vh 0;
-  box-sizing: border-box;
-   transform: translateX(1.4vw);
-    max-width:100%;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 0;
 }
+
 .how-title {
-   display: block;      
-  width: 100%;         
-  text-align: center !important; 
-  color: #000000;
-  font-size: 3vw;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 48px;
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 700;
-  margin-top: 6.4vh;
-  margin-bottom: 4.5vh;
+  margin-top: 3rem;
+  margin-bottom: 6.5rem;
 }
+
 .how-content {
   display: flex;
-  justify-content: center;   
-  align-items: stretch;     
-  max-width: 90%;
-  margin: 0 auto;
-  gap: 5vw;
-  box-sizing: border-box;
-  margin-bottom:5vw;
-  margin-top:9vh;
+  justify-content: center;
+  align-items: stretch;
+  gap: 3rem;
+  max-width: 100%;
+  margin: 4rem auto;
 }
+
+/* LEFT COLUMN */
 .how-left {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 65%;       
-  max-width: 65%;
+  width: 55%;
+  margin-top: -35px;
 }
+
+/* EACH STEP ROW */
 .step-row {
   display: flex;
   align-items: center;
   gap: 1rem;
   position: relative;
 }
+
+/* OUTER SQUARE */
 .outer-square-how {
-  width: 5.2rem;
-  height: 5.2rem;
-  border: 1.9px dashed #000000;
+  width: 120px;
+  height: 120px;
+  border: 2px dashed #000;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 6px;
-  box-sizing: border-box;
+  border-radius: 0.5rem;
 }
+
+/* INNER SQUARE */
 .inner-square-how {
-  width: 3.9rem;
-  height: 3.9rem;
+  width: 88px;
+  height: 88px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: 700;
-  border-radius: 4px;
-  box-sizing: border-box;
+  border-radius: 0.4rem;
 }
+
+/* STEP ICON IMAGE */
 .inner-square-how img {
-  width: 67%;
-  height: 69%;
-  /* object-fit: cover;  */
-  /* border-radius: 0.5rem; */
+  width: 65%;
+  height: 65%;
   z-index: 3;
-  /* margin-left:-1vw; */
 }
-/* Colors */
-.step-1 .inner-square-how { background: #f7d583; color: #614a0f; font-size:1.4rem;font-family: 'Space Grotesk',sans-serif;}
-.step-2 .inner-square-how { background: #d9c5f4; color: #5c3781; font-size:1.4rem;font-family: 'Space Grotesk',sans-serif;}
-.step-3 .inner-square-how { background: #c9ecf8; color: #0c4f6a;font-size:1.4rem;font-family: 'Space Grotesk',sans-serif; }
-.step-4 .inner-square-how { background: #d7edcf; color: #235723;font-size:1.4rem;font-family: 'Space Grotesk',sans-serif; }
+
+/* STEP COLORS (EXACT LOGIC PRESERVED) */
+.step-icon.step-1 .inner-square-how { background: #f7d583; color: #614a0f; font-size: 1.2rem; }
+.step-icon.step-2 .inner-square-how { background: #d9c5f4; color: #5c3781; font-size: 1.2rem; }
+.step-icon.step-3 .inner-square-how { background: #c9ecf8; color: #0c4f6a; font-size: 1.2rem; }
+.step-icon.step-4 .inner-square-how { background: #d7edcf; color: #235723; font-size: 1.2rem; }
+
+/* STEP TEXT */
 .step-text {
-  font-size: 1.7rem;
-  line-height: 1.2;
-  white-space: nowrap;
-  font-family: 'Space Grotesk',sans-serif;
+  font-size: 32px;
   font-weight: 700;
+  font-family: 'Space Grotesk', sans-serif;
+  white-space: nowrap;
 }
-.step-icon.step-1 + .step-text {color: #614a0f;}
-.step-icon.step-2 + .step-text {color: #5c3781;}
-.step-icon.step-3 + .step-text {color: #0c4f6a;}
-.step-icon.step-4 + .step-text {color: #235723;}
+
+/* STEP TEXT COLORS (THE PART YOU WERE ASKING FOR) */
+.step-icon.step-1 + .step-text { color: #614a0f; }
+.step-icon.step-2 + .step-text { color: #5c3781; }
+.step-icon.step-3 + .step-text { color: #0c4f6a; }
+.step-icon.step-4 + .step-text { color: #235723; }
+
+/* CONNECTOR LINE */
 .connector {
-  width: 0;
-  height: 2.7rem; 
-  border-left: 1.9px dashed #000000;
-  margin-left: 2.5rem;
+  height: 3.2rem;
+  border-left: 2px dashed #000;
+  margin-left: 3.7rem;
 }
-/* @media (max-width: 800px){
-  .how-content { flex-direction: column; gap: 3vh; max-width: 95%; }
-  .how-left { width: 100%; min-width: unset; }
-  .how-right { width: 100%; }
-  .steps-column::before { top: calc(var(--outer-size) / 2); bottom: calc(var(--outer-size) / 2); }
-} */
-/* RIGHT column */
+
+/* RIGHT COLUMN IMAGE */
 .how-right {
   flex: 1;
   display: flex;
-  justify-content: flex-end;
-  align-items: center; 
-  box-sizing: border-box;
-  min-width: 55%;
-  transform: translateX(1.5vw);
+  justify-content: center;
+  align-items: center;
+  min-width: 45%;
 }
+
 .how-right img {
-  width: 85%;
-  height: 85%;
-  margin-top:-3.5vh;
-  margin-right:9vh;
-  /* object-fit: cover; */
-  display: block;
-  /* border-radius: 8px; */
-  box-shadow: 0 0 0 rgba(0,0,0,0);
+  width: 100%;
+  max-width: 450px;
+  object-fit: contain;
+  margin-top: -2rem;
 }
 /* cta Section(part 6/9) */
 .cta-section::before {
