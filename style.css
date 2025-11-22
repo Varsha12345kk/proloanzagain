@@ -211,13 +211,13 @@ body {
   z-index: 2;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 28px;
+  /* justify-content: space-between; */
+ gap: 82px;
   width: 92%;
   max-width: 1200px;
   margin: 0 auto;
   flex-wrap: wrap;
-  margin-top: 35px;
+  margin-top: -13px;
 }
 
 /* hero text and image columns */
@@ -840,7 +840,7 @@ max-width: 1200px;
 
 .why-image img {
   width: 100%;
-  max-width: 473px;
+  max-width: 513px;
   object-fit: cover;
   margin-left: 20px;
 }
@@ -956,7 +956,7 @@ max-width: 1200px;
 
 .how-right img {
   width: 100%;
-  max-width: 470px;
+  max-width: 510px;
   object-fit: contain;
   margin-top: -4rem;
 }
@@ -2547,116 +2547,132 @@ li a {
 }
 
 .hero-slider {
-  width: 40vw;          
-  height: 72vh;
+  width: 480px;             /* replaces 40vw */
+  height: 600px;            /* replaces 72vh */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1.6rem;
+  gap: 24px;                /* replaces 1.6rem */
   font-family: "Space Grotesk", sans-serif;
 }
+
 .slate-box {
   width: 100%;
-  height: 70vh;
+  height: 520px;            /* replaces 70vh */
   position: relative;
-  overflow: hidden;     
+  overflow: hidden;
 }
+
 .slate-stack {
   width: 100%;
   height: 100%;
   position: relative;
 }
+
 .slate {
   position: absolute;
-  top: 0;
+  top: 81px;
   left: 0;
-  width: 26vw;         
-  height: 60vh;       
+ width: 365px;
+    height: 432px;
   background: #ffffff;
-  border-radius: 0.5rem;
-  padding: 1.2rem;
+  border-radius: 8px;
+  padding: 18px;            /* replaces 1.2rem */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   transition: transform 0.45s ease, opacity 0.45s ease;
   font-family: "Space Grotesk", sans-serif;
 }
+
 .slate-image {
   flex: 1 1 auto;
-  border-radius: 0.5rem;
+  border-radius: 8px;
   overflow: hidden;
-  margin-bottom: 0.8rem;
+  margin-bottom: 12px;      /* replaces 0.8rem */
   background: #e6e6e6;
 }
+
 .slate-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .slate-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
+  gap: 16px;
 }
+
 .slate-title {
-  font-size: 1.3rem;
+  font-size: 20px;          /* replaces 1.3rem */
   font-weight: 600;
   color: #002bdc;
   margin: 0;
-  line-height: 2vw;
+  line-height: 28px;        /* replaces 2vw */
 }
+
 .slate-read {
   text-decoration: none;
-  font-size: 0.7rem;
+  font-size: 12px;          /* replaces 0.7rem */
   font-weight: 600;
   background: #002bdc;
   color: #ffffff;
-  padding: 0.5rem 0.7rem;
-  border-radius: 1.5rem;
+  padding: 8px 12px;        /* replaces rem padding */
+  border-radius: 22px;
   white-space: nowrap;
-   font-family: 'Poppins',sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
+
 .slate-controls {
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
-  gap: 11vw;
+  gap: 140px;            
+  margin-top:-7px;
 }
+
 .slate-controls button {
   border: none;
-  border-radius: 1.875rem;
-  padding: 0.6rem 1rem;
+  border-radius: 30px;
+  padding: 10px 16px;
   background: #002bdc;
   color: #ffffff;
-  font-size: 0.95rem;
+  font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-  font-family: 'Space Grotesk',sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
 }
+
+/* STACK POSITIONS — SAME LOGIC, PX VERSIONS */
 .slate-pos-0 {
   z-index: 50;
   transform: translateX(0) scale(1);
   opacity: 1;
 }
+
 .slate-pos-1 {
   z-index: 40;
-  transform: translateX(2vw) scale(0.97);
+  transform: translateX(35px) scale(0.97);   /* replaces 2vw */
   opacity: 1;
 }
+
 .slate-pos-2 {
   z-index: 30;
-  transform: translateX(4vw) scale(0.94);
+  transform: translateX(70px) scale(0.94);   /* replaces 4vw */
   opacity: 1;
 }
+
 .slate-pos-3 {
   z-index: 20;
-  transform: translateX(6vw) scale(0.91);
+  transform: translateX(105px) scale(0.91);   /* replaces 6vw */
   opacity: 0.95;
 }
+
 .slate-pos-4 {
   z-index: 10;
-  transform: translateX(8vw) scale(0.88);
+  transform: translateX(140px) scale(0.88);   /* replaces 8vw */
   opacity: 0.9;
 }
 
