@@ -112,13 +112,13 @@ body {
 .dropdown-menu {
   position: absolute;
   top: calc(100% + 12px);
-  left: 0;
+  left: -75px;
   background-color: #ffffff;
   padding: 10px;
   display: none;
   flex-direction: column;
   gap: 10px;
-  width: 240px;
+  width: 280px;
   border-radius: 10px;
   z-index: 1200;
   box-shadow: 0 10px 30px rgba(0,0,0,0.12);
@@ -163,7 +163,7 @@ body {
 
 .loan-text h3 {
   margin: 0;
-  font-size: 15px;
+  font-size: 20px;
   color: #002bdc;
   font-family: 'Space Grotesk', sans-serif;
   line-height: 1.15;
@@ -171,10 +171,9 @@ body {
 
 .loan-text p {
   margin: 4px 0 0 0;
-  font-size: 12px;
+  font-size: 14px;
   color: #0f1c40;
 }
-
 /* ICON FONT SIZING */
 .fa-caret-down,
 .material-icons {
