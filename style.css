@@ -1121,6 +1121,7 @@ max-width: 1200px;
   margin: 3rem auto;              /* replaces 8vh */
   padding: 1.5rem 2rem;           /* replaces vh/vw */
   font-family: 'Space Grotesk', sans-serif;
+  padding: 0
 }
 
 .faq-section h2 {
