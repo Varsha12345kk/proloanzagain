@@ -634,7 +634,7 @@ max-width: 1200px;
   border-radius: 20px;
   padding: 40px 25px;
  flex: 1 1 calc(33.33% - 40px);   /* 3 cards per row */
-  max-width: calc(34% - 40px);
+  max-width: calc(35% - 40px);
   min-width: 0;  
   box-shadow: 0 14px 26px rgba(0,0,0,0.04);
   margin-bottom: 20px;
@@ -699,14 +699,12 @@ max-width: 1200px;
   z-index: 0;
   transition: transform 0.4s ease-out;
 }
-
 /* Card hover lift */
 .why-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 24px 36px rgba(0,0,0,0.11),
               0 24px 46px rgba(245, 186, 1, 0.48);
 }
-
 /* Growing yellow circle */
 .why-card:hover::before {
   transform: translate(-50%, -50%) scale(6);
@@ -752,13 +750,11 @@ max-width: 1200px;
   padding: 80px 0;
   background-color: #fff;
 }
-
 /* Main section title */
 .why-section {
   padding: 80px 0;
   background-color: #fff;
 }
-
 /* Main section title */
 .why-section > h2 {
   text-align: center;
