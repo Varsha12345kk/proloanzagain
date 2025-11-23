@@ -953,7 +953,7 @@ max-width: 1200px;
   background: 
     linear-gradient(rgba(28, 5, 144, 0.3), rgba(28, 5, 144, 0.3)),
     url("images/gradient-bg.png") no-repeat center center / cover;
-  padding: 10rem 0;     /* replaces 20vh */
+  padding: 8.2rem 0;     /* replaces 20vh */
   text-align: center;
   color: #ffffff;
   position: relative;
