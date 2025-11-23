@@ -38,10 +38,11 @@
     font-weight: 700;
     margin-bottom: 1rem;
     font-family: 'Space Grotesk', sans-serif;
+     line-height: 60px;
 }
 .story-text {
     font-size: 18px;
-    line-height: 28px;
+    line-height: 32px;
     color: #000000;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
@@ -119,11 +120,11 @@
 .leadership-section {
     width: 90%;
     max-width: 1200px;
-    margin: 60px auto 160px; /* replaced vh */
+    margin: -30px auto 160px; /* replaced vh */
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 48px; /* replaced 4vh */
+    gap: 11px; /* replaced 4vh */
 }
 .leadership-heading {
     font-size: 52px;
