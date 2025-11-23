@@ -607,17 +607,17 @@ body {
   font-weight: 600;
   margin-bottom: 40px;
 }
-
-/* Section heading */
 .why-choose h2 {
   font-size: 48px;
   font-weight: 700;
   color: #ffffff;
   margin-bottom: 60px;
   font-family: 'Space Grotesk', sans-serif;
+  width: 90%;
+  max-width: 1200px;
+  margin: 3vh auto 4vh auto;
+  line-height: 60px;
 }
-
-/* Card wrapper */
 .why-wrapper {
   display: flex;
   justify-content: center;
@@ -627,8 +627,6 @@ body {
 max-width: 1200px;
   margin: 0 auto;
 }
-
-/* Individual card */
 .why-card {
   background-color: #fff;
   border-radius: 20px;
@@ -643,8 +641,6 @@ max-width: 1200px;
   z-index: 1;
   transition: all 0.4s ease-out;
 }
-
-/* Icon in card */
 .why-card img {
   width: 110px;
   margin-bottom: 20px;
@@ -652,8 +648,6 @@ max-width: 1200px;
   z-index: 10;
   transition: all 0.4s ease-out;
 }
-
-/* Card title */
 .why-card h3 {
   font-size: 32px;
   font-weight: 700;
@@ -663,7 +657,6 @@ max-width: 1200px;
   position: relative;
   z-index: 10;
 }
-
 /* Card subtitle */
 .why-card h4 {
   font-size: 24px;
@@ -674,7 +667,6 @@ max-width: 1200px;
   position: relative;
   z-index: 10;
 }
-
 /* Description text */
 .why-card p {
   font-size: 18px;
