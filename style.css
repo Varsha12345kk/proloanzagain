@@ -271,14 +271,12 @@ body {
   line-height: 1.6;
   font-weight: 400;
 }
-
 /* hero buttons */
 .hero-buttons {
   display: flex;
   gap: 12px;
   align-items: center;
 }
-
 .btn-primary,
 .btn-secondary {
   padding: 12px 32px;
@@ -289,8 +287,8 @@ body {
   display: inline-block;
   position: relative;
   overflow: hidden;
+  z-index: 1; /* Add this */
 }
-
 .btn-primary { background: #002bdc; color: #fff; border: none; }
 .btn-secondary { background: transparent; color: #002bdc; border: 2px solid #002bdc; }
 .btn-primary::before,
@@ -304,6 +302,10 @@ body {
   left: -25%;
   z-index: -1;
   transform: translate3d(0, 75%, 0);
+}
+.btn-text {
+  position: relative;
+  z-index: 1;
 }
 .btn-primary::before {
   background: #F5ba01;
@@ -376,8 +378,6 @@ body {
 .btn-secondary.hover-out .btn-text {
   color: #002bdc;
 }
-
-/* decorative circle-icon (replaced vw with px-based sizing) */
 .circle-icon {
   display: flex;
   align-items: center;
