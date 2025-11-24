@@ -60,7 +60,7 @@
 }
 .mission-image img {
     width: 100%;
-    max-width: 520px;
+    max-width: 584px;
     height: auto;
     border-radius: 16px;
     object-fit: cover;
@@ -147,8 +147,8 @@
 }
 .leadership-text {
     position: absolute;
-    left: 7%;
-    right: 7%;
+    left: 4%;
+    right: 4%;
     bottom: -135px; 
     background-color: rgba(255, 255, 255, 0.95);
     padding: 32px; 
@@ -216,11 +216,12 @@
   font-family: 'Space Grotesk', sans-serif;
 }
 .founder-content h4 {
-  font-size: 18px;
+ font-size: 18px;
   font-weight: 600;
   color: #000000;
   margin-bottom: 20px;
   font-family: 'Poppins', sans-serif;
+  margin-top: -12px;
 }
 .founder-content p {
   font-size: 18px;
