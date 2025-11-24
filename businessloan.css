@@ -129,7 +129,7 @@
     max-height: 520px;      
     width: 100%;
     object-fit: contain;
-  margin-top: -22px;
+    margin-top: -22px;
 }
 .docsecbusiness .documents-right ul li:nth-child(4) span {
     line-height: 32px;     
@@ -159,7 +159,7 @@
       font-weight: 700;
       line-height: 1.4;
       margin-top: 32px;
-      margin-bottom: 80px;
+      margin-bottom: 46px;
       font-family: 'Space Grotesk', sans-serif;
     }
     .steps-flow {
@@ -253,15 +253,16 @@
     }
     .step-label {
       color: #ffffff;
-      font-size: 16px;
+      font-size: 24px;
       margin-top: 10px;
+      font-family: 'Space Grotesk', sans-serif;
     }
     .steps-boxes {
       display: flex;
       justify-content: space-between;
       align-items: stretch;
       gap: 24px;
-      margin-top: 60px;
+      margin-top: 24px;
       width: 90%;
       max-width: 1200px;
       margin-left: auto;
