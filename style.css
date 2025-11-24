@@ -955,7 +955,7 @@ max-width: 1200px;
 .cta-section {
   background: 
     linear-gradient(rgba(28, 5, 144, 0.3), rgba(28, 5, 144, 0.3)),
-    url("images/gradient-bg.png") no-repeat center center / cover;
+    url("images/gradient-bg.svg") no-repeat center center / cover;
   padding: 8.2rem 0;     /* replaces 20vh */
   text-align: center;
   color: #ffffff;
