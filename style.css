@@ -645,7 +645,7 @@ max-width: 1200px;
   transition: all 0.4s ease-out;
 }
 .why-card img {
-  width: 110px;
+  width: 90px;
   margin-bottom: 20px;
   position: relative;
   z-index: 10;
