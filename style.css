@@ -1721,7 +1721,7 @@ li a {
     .hero-img { max-width: 95%; margin-top: 3vh; margin-bottom:5vw; }
     .process-img img {width: 75%;max-width: 100%;height: auto;display: block;margin: 0 auto; }
     .process-text {max-width: 95%;margin: 0 auto;text-align: center;font-size: 6vw;padding: 0vw 3vw;margin-left: 0px; }
-    .process-text h1 {font-size: 10vw;  margin-bottom: 2vh;word-wrap: break-word; text-align: left;}
+    .process-text h1 {font-size: 10vw;  margin-bottom: 2vh;word-wrap: break-word; text-align: left;line-height: 56px;}
     .process-text p {font-size: 18px;line-height: 1.6;word-wrap: break-word;text-align: left;}
     .services-section { width: 98%; padding: 3.5vh 0; margin: 2vh auto; }
   .services-section h2 { font-size: 7.2vw; margin-bottom: 4vh; }
@@ -1751,7 +1751,7 @@ li a {
   .how-right { width: 90%; order: -1; transform: translateX(0); display: flex; justify-content: center; }
   .how-right img { width: 100%; height: auto;margin-left: 13vw; margin-bottom: 65px;}
   .how-left { width: 100%;max-width: 100%;box-sizing: border-box;text-align: left; }
-  .step-row { gap: 0.6rem; }
+  .step-row { gap: 24px; }
   .outer-square-how { width: 100px; height: 100px; border-radius: 3px; }
   .inner-square-how { width: 68px; height: 68px; font-size: 1rem; border-radius: 2.5px; }
   .step-text { font-size: 22px;white-space: normal;  word-wrap: break-word; overflow-wrap: break-word; } 
@@ -1762,11 +1762,11 @@ li a {
     .step-card p { font-size: 3.5vw; line-height: 1.6; }
     .cta-section { padding: 15vh 0; max-width: 100%; }
     .cta-content h2 { font-size: 9vw; line-height: 1.2; margin-bottom: 5vh; margin-left:5vw;margin-right:5vw;}
-    .cta-btn { padding: 15px 25px; font-size: 14px; }
+    .cta-btn { padding: 20px 30px; font-size: 14px; }
     .faq-section { width: 98%; margin: 5vh auto; padding: 2vh 1vw; max-width: 100%;margin-bottom: 23vw; }
-    .faq-section h2 { font-size: 8.4vw; margin-bottom: 5vh;text-align: left;padding: 0vw 3vw; }
-    .faq-item { padding: 4vh 6vw; margin-bottom: 3vh;margin:2vw 2.5vw 2vw 2.5vw; }
-    .faq-item summary { font-size: 5vw; line-height: 1.4;}
+    .faq-section h2 { font-size: 8.4vw; margin-bottom: 5vh;text-align: left;padding: 0vw 3vw;line-height: 48px; }
+    .faq-item { padding: 3vh 6vw; margin-bottom: 3vh;margin:2vw 2.5vw 2vw 2.5vw; }
+    .faq-item summary { font-size: 28px; line-height: 1.4;}
     .faq-item p { font-size:18px; margin-top: 2vh; line-height: 1.7; }
     summary::after { font-size: 3.5vw; }
   .enquiry-section { padding: 1vh 6vw; max-width: 100%; display: flex; flex-direction: column;  align-items: center;gap: 4vh;}
@@ -1776,7 +1776,7 @@ li a {
   .enquiry-box {width: 100%;padding: 4vh 4vw;gap: 4vh;display: flex;flex-direction: column; align-items: center;margin-top:-16vw;border-radius: 4vw;}
   .input-box select,.input-box input {width: 74vw;height: 6vh;font-size: 3.5vw;  box-sizing: border-box; text-align: left;  padding: 0 3vw;  }
   .input-box .material-icons {font-size: 4vw;left: 4vw;}
-  .btn-row {display: flex;align-items: center;justify-content: center;margin-left:-2vw;}
+  .btn-row {display: flex;align-items: center; justify-content: right; margin-right: 6vw;}
   .cta-btn1 {padding: 2vw 6vw;border-radius: 6vw;font-size: 4vw;display: inline-flex;align-items: center;justify-content: center;gap: 2vw;}
   .circle-icon2.gray {width: 15vw !important;height: 15vw !important;font-size: 4vw;border-radius: 50%;display: flex;align-items: center;justify-content: center;border: 1px solid #1046d5;background: #1046d5;color: #ffffff;}
     footer { padding: 4vh 3vw 2vh; max-width: 100%; }
