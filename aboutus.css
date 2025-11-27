@@ -231,7 +231,7 @@
   font-family: 'Poppins', sans-serif;
 }
 /* Responsive Design */
-@media (max-width: 60vw) {
+@media (max-width: 1024px) {
   .founder-container {
     flex-direction: column;
     text-align: center;
@@ -287,6 +287,7 @@
     justify-content: center;
   }
 }
+
 /* 1024px */
 @media screen and (max-width:1024px){
 .aboutus-bg{height:35vh}
@@ -349,22 +350,22 @@
 /* 480px */
 @media screen and (max-width:480px){
 .aboutus-bg{height:35vh}
-.aboutus-title{font-size:2.3rem;bottom: 9vh;line-height: 5vh;white-space: nowrap;}
+.aboutus-title{font-size:38px;bottom: 9vh;line-height: 5vh;white-space: nowrap;}
 .story-section{margin:8vh auto;padding:3vh 4vw;border-bottom-left-radius:4rem;border-top-right-radius:4rem}
-.story-heading{font-size:1.8rem;text-align: left;}
-.story-text{font-size:1rem;line-height:1.7rem;text-align: left;}
+.story-heading{font-size:32px;text-align: left;line-height: 38px;}
+.story-text{font-size:18px;line-height:30px;text-align: left;}
 .mission-vision-section{gap:1vw;flex-direction:column;margin:3vh auto 8vh}
 .mission-image img{width:90vw;height: 75vw;}
 .yellow-dart-img img,.mountain-flag-img img{width:4.5rem}
 .mission-vision-text{width:95%;text-align:center}
-.mission-header,.vision-header{flex-direction:row;align-items:center;text-align:center;gap:1.2vh}
-.mission-header img,.vision-header img{width:4.1rem;height:auto;margin-bottom:1vh}
-.mission-heading,.vision-heading{justify-content:center;text-align:center;margin-right: 21vw;}
-.mission-text,.vision-text{font-size:1rem;line-height:1.7rem;width:101%;text-align: left;}
+.mission-header,.vision-header{flex-direction:row;align-items:center;text-align:center;gap:3.2vh}
+.mission-header img,.vision-header img{width:4.1rem;height:auto;margin-bottom:8vh}
+.mission-heading,.vision-heading{justify-content:center;text-align:center;margin-right: 180px;}
+.mission-text,.vision-text{font-size:18px;line-height:1.7rem;width:101%;text-align: left;}
 .leadership-section{width:95%;gap:2vh;margin:3vh auto 38vh}
-.leadership-heading{font-size:2rem;text-align: left;}
+.leadership-heading{font-size:38px;text-align: left;}
 .leadership-image{height:34vh;margin-top: -5vh;}
-.leadership-text{top:55%;left:4%;right:4%;font-size:0.85rem;padding:4.2vw}
+.leadership-text{top:55%;left:4%;right:4%;font-size:18px;padding:4.2vw;height: 737px;line-height: 28px;}
 .team-section{padding:3vh 3vw}
 .team-card{width:95%}
 .image-wrapper{height:50vh}
@@ -378,10 +379,14 @@
 @media screen and (max-width:390px){
 .leadership-section{width:95%;gap:2vh;margin:3vh auto 58vh;}
 .aboutus-title{font-size:2rem;bottom: 5vh;line-height: 5vh;white-space: nowrap;}
+.leadership-text {height: 573px;}
 }
+
 @media (max-width: 1024px) {
   .founder-section {
     padding: 6vh 6vw;
+    display: flex;
+    flex-direction: column;
   }
   .founder-container {
     flex-direction: column;
@@ -434,6 +439,7 @@
   }
   .founder-content {
     text-align: left;
+    margin-left: -30px;
   }
   .founder-content h2 {
     font-size: 1.9rem;
@@ -462,6 +468,7 @@
 @media (max-width: 480px) {
   .founder-section {
     padding: 4vh 5vw;
+    padding-top: 280px;
   }
   .founder-container {
     flex-direction: column;
@@ -484,6 +491,7 @@
   }
   .founder-content p {
     font-size: 1rem;
+    padding-right: 0px;
     /* line-height: 1.5; */
     /* padding: 0 6vw; */
   }
@@ -498,13 +506,19 @@
   }
 }
 @media (max-width: 360px) {
+      .story-section {
+        margin: 8vh auto;
+        padding: 4vh 6vw;
+        border-bottom-left-radius: 4rem;
+        border-top-right-radius: 4rem;
+    }
   .founder-section {
     padding: 4vh 4vw;
   }
-  .founder-image img {
+  /* .founder-image img {
     width: 92%;
     height: 45vh;
-  }
+  } */
   .founder-content h2 {
     font-size: 1.7rem;
   }
@@ -512,19 +526,41 @@
     font-size: 1.1rem;
   }
   .founder-content p {
-    font-size: 0.8rem;
-    padding: 0 5vw;
+    font-size: 16px;
+    padding: -1px 5vw;
   }
   .social-links {
-    justify-content: center;
+    justify-content: left;
     gap: 5vw;
     margin-top: 3vh;
   }
   .social-links a {
-    font-size: 1rem;
+    font-size: 18px;
   }
+  .mission-text, .vision-text {
+        font-size: 18px;
+        line-height: 1.7rem;
+        width: 80%;
+        text-align: left;
+    }
+        .leadership-text {
+        top: 55%;
+        left: 4%;
+        right: 4%;
+        font-size: 16px;
+        padding: 4.2vw;
+        height: 785px;
+        line-height: 28px;
+    }
+        .founder-image img {
+        width: 100%;
+        height: 44vh;
+        border-radius: 0.8rem;
+        margin-top: 266px;
+    }
 }
 .cta-btn1.hover-in .btn-text {
   animation: textHoverIn 0.3s forwards;
   color:#000000;
 }
+
