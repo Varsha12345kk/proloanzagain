@@ -202,7 +202,7 @@
   height: 558px;    
   border-radius: 16px;
   object-fit: cover;
-  box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 0 16px rgba(0, 0, 0, 0.1); */
 }
 .founder-content {
   flex: 1 1 55%;
@@ -216,7 +216,7 @@
   font-family: 'Space Grotesk', sans-serif;
 }
 .founder-content h4 {
- font-size: 18px;
+  font-size: 18px;
   font-weight: 600;
   color: #000000;
   margin-bottom: 20px;
@@ -358,7 +358,8 @@
 .mission-image img{width:90vw;height: 75vw;}
 .yellow-dart-img img,.mountain-flag-img img{width:4.5rem}
 .mission-vision-text{width:95%;text-align:center}
-.mission-header,.vision-header{flex-direction:row;align-items:center;text-align:center;gap:3.2vh}
+.mission-header,.vision-header{flex-direction:row;align-items:center;text-align:center;gap:3.2vh;margin-top: 24px;}
+.vision-header{margin-top:-20px;}
 .mission-header img,.vision-header img{width:4.1rem;height:auto;margin-bottom:8vh}
 .mission-heading,.vision-heading{justify-content:center;text-align:center;margin-right: 180px;}
 .mission-text,.vision-text{font-size:18px;line-height:1.7rem;width:101%;text-align: left;}
@@ -563,4 +564,3 @@
   animation: textHoverIn 0.3s forwards;
   color:#000000;
 }
-
