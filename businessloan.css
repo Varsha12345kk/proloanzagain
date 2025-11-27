@@ -538,8 +538,10 @@
     margin: 3vh auto;
   }
   .eligibility-title {
-    font-size: 2.1rem;
+    font-size: 38px;
     margin-bottom: 4vh;
+    text-align: left;
+    margin-top: 10px;
   }
   .eligibility-content {
     flex-direction: column;
@@ -551,16 +553,17 @@
   .eligibility-image {
     width: 90%;
     height: 31vh;
+    margin-top: 5px;
   }
   .eligibility-right {
     max-width: 90%;
     min-height: auto;
-    margin-left:7.5vw;
+    margin-left:0px;
   }
   .criteria-box {
     position: static;
     max-width: 100%;
-    font-size: 0.95rem;
+    font-size: 18px;
     line-height:5.7vw;
     padding: 1.3vh 3vw;
     margin-bottom: 3vh;
@@ -568,7 +571,7 @@
   .criteria-square {
     width: 2.8rem;
     height: 3.3rem;
-    font-size: 1rem;
+    font-size: 22px;
   }
   .docsecbusiness .documents-right {
     margin-top: 4vw;
@@ -584,14 +587,14 @@
         line-height:6vw;
     }
     .docsecbusiness .documents-right ul li:nth-child(4) img{
-     margin-top:-7vw;
+     margin-top:-58px;
    }
   .steps-section {
     padding: 3vh 2.5vw;
     margin-bottom: 6vw;
   }
   .steps-header h2 {
-    font-size: 1.8rem;
+    font-size: 33px;
     margin-top: 1.5vw;
     margin-bottom: 4vh;
   }
@@ -615,11 +618,11 @@
     justify-content: space-between;
     padding: 0 4vw;
     width: 100%;
-    gap: 6vw;
+    gap: 0px;
   }
   .line {
-    /* width: 25vw;   */
-    margin-bottom: 5vw;       
+    width: 25vw;  
+    /* margin-bottom: 5vw;        */
   }
   .step-label {
     font-size: 0.85rem;
@@ -637,11 +640,11 @@
     height: auto;  
   }
   .step-box h3 {
-    font-size: 1.6rem;
+    font-size: 25px;
     margin-top: 1vw;
   }
   .step-box p {
-    font-size: 0.95rem;
+    font-size: 18px;
   }
   .businessloan-bg {
     background-image: url(images/businessloan.svg);
@@ -651,4 +654,24 @@
     height: 35vh;
     position: relative;
 }
+}
+@media (max-width: 360px) {
+    .docsecbusiness .documents-right ul li:nth-child(4) img {
+        margin-top: -13vw;
+    }
+        .docsecbusiness .documents-right ul li:nth-child(4) span,.docsecbusiness .documents-right ul li:nth-child(2) span,.docsecbusiness .documents-right ul li:nth-child(1) span {
+        font-size: 1.1rem;
+        margin-bottom: -0.2vh;
+        line-height: 6vw;
+    }
+    .criteria-box {
+        font-size: 16px;
+        line-height: 5.7vw;
+        padding: 1.3vh 3vw;
+        margin-bottom: 3vh;
+    }
+    .docsecbusiness .documents-right ul {
+        margin-left: -9px;
+        margin-right: 5vw;
+    }
 }
