@@ -1780,20 +1780,19 @@ li a {
   .cta-btn1 {padding: 2vw 6vw;border-radius: 6vw;font-size: 4vw;display: inline-flex;align-items: center;justify-content: center;gap: 2vw;}
   .circle-icon2.gray {width: 15vw !important;height: 15vw !important;font-size: 4vw;border-radius: 50%;display: flex;align-items: center;justify-content: center;border: 1px solid #1046d5;background: #1046d5;color: #ffffff;}
     footer { padding: 4vh 3vw 2vh; max-width: 100%; }
-    .footer-top { row-gap: 3vh;grid-template-columns: 1fr !important; text-align: center; }
-     .footer-connect .join1,.footer-connect .join2 {text-align: center; margin-left: 130px;}
-  .social-icons {justify-content: center;margin-left: 0rem;margin-top: 2vw;}
+    .footer-top { row-gap: 3vh;grid-template-columns: 1fr !important; text-align: left;margin-left: -6px;}
+     .footer-connect .join1,.footer-connect .join2 {text-align: left; margin-left: 130px;}
+  .social-icons {justify-content: left;margin-left: 0rem;margin-top: 2vw;}
     .footer-col h4 { font-size: 1.5rem; margin-bottom: 1.5vh; }
     .footer-col ul li { font-size: 1rem; margin-bottom: 1vh; }
     .footer-connect { text-align: center; margin-left: 0; }
-    .footer-connect h4 { font-size: 7vw; margin-top: 0; }
-     .footer-bottom a,
-  .footer-bottom p { margin-left: 0;font-size: 0.9rem;}
+    .footer-connect h4 { font-size: 7vw; margin-top: 0; margin-left: -165px;}
+     .footer-bottom a,.footer-bottom p { margin-left: 0;font-size: 0.9rem;}
   .footer-top .footer-col:nth-child(2), .footer-top .footer-col:nth-child(3) {margin-left: 0px;}
     /* .footer-bottom a{gap:1vw;} */
-    .footer-terms{display: flex;align-items: center;justify-content: center;gap: 4vw;flex-wrap: nowrap;}
-    .social-icons { justify-content: center; margin-top: 2vh; }
-    .footer-bottom { margin-top: 3vh; padding-top: 2vh; }
+    .footer-terms{display: flex;align-items: center;justify-content: left;gap: 4vw;flex-wrap: nowrap;}
+    .social-icons {margin-top: -1vh;margin-left: -233px; }
+    .footer-bottom { margin-top: 3vh; padding-top: 2vh;text-align: left; }
     .circle-icon, .circle-icon1, .circle-icon2 { width: 12vw; height: 12vw; max-width: 12vw !important; max-height: 12vw !important; font-size: 12px; }
     .circle-icon1.gray{width: 13vw !important; height: 13vw !important; max-width: none !important; max-height: none !important;} 
     .circle-icon2{width: 14vw; height: 14vw; max-width: 30vw; max-height: 30vw;}
@@ -1993,10 +1992,12 @@ li a {
   .nav-links a {
     padding: 2.5vh 4vw;
     font-size: 1.2rem;
+    text-align: left;
   }
   .nav-links a.signup-btn-outline {
     padding: 2.5vh 0;
     font-size: 1.2rem;
+    text-align: left;
   }
   .sign-up-group {
     padding: 2.5vh 4vw 0 4vw;
@@ -2045,9 +2046,10 @@ li a {
   .nav-links a {
     padding: 2vh 4vw;
     font-size: 18px;
+    text-align: left;
   }
   .nav-links a.signup-btn-outline {
-    padding: 2vh 0;
+    padding: 2vh 18px;
     font-size: 18px;
   }
   .sign-up-group {
@@ -2123,6 +2125,7 @@ li a {
 }
 .mobile-dropdown li a {
   display: block;
+  margin-left: 30px;
   padding: 0.6rem 0;
   color: #182440;
   text-decoration: none;
@@ -2132,6 +2135,14 @@ li a {
   border-bottom: none;
 }
 @media (max-width: 480px) {
+  .mobile-dropdown {
+      display: block !important;
+      opacity: 1 !important;
+      visibility: visible !important;
+      height: auto !important;
+      position: static !important;       
+      z-index: 1 !important;             
+  }
   .dropdown-menu {
     display: none !important;
     opacity: 0 !important;
@@ -2139,8 +2150,9 @@ li a {
     height: 0 !important;
     padding: 0 !important;
   }
-  .mobile-dropdown.show {
-    display: block !important;
+  .hamburger-btn {
+      position: relative;
+      z-index: 9999 !important;         
   }
 }
 
@@ -2151,9 +2163,9 @@ li a {
     /* background: #fff; */
     padding: 20px 0;
     border-radius: 16px;
-    margin-top: 10px;
+    margin-top: -50px;
+    margin-bottom: -40px;
     width: 100%;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
   }
   nav.active .nav-links {
     display: flex;
