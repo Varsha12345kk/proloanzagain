@@ -597,6 +597,7 @@
     font-size: 33px;
     margin-top: 1.5vw;
     margin-bottom: 4vh;
+    text-align: left;
   }
   .steps-flow {
     flex-direction: row;
@@ -631,7 +632,7 @@
     flex-direction: column;
     height: auto;
     gap: 3vh;
-    margin-top: 5vh;
+    margin-top: 0px;
      width: calc(100% - 8vw);  
     margin-left: 4vw;
     margin-right: 4vw;
@@ -640,7 +641,7 @@
     height: auto;  
   }
   .step-box h3 {
-    font-size: 25px;
+    font-size: 32px;
     margin-top: 1vw;
   }
   .step-box p {
