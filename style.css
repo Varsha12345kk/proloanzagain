@@ -1397,9 +1397,9 @@ footer {
   margin-left: -120px;             
 }
 .footer-top .footer-col:nth-child(3) {
-  margin-left: -152px;             
+  margin-left: -152px;  
+  color: #0b0b1e;           
 }
-
 /* COLUMN TITLES */
 .footer-col h4 {
   color: #ffffff;
@@ -1407,7 +1407,9 @@ footer {
   margin-bottom: 16px;
   font-family: 'Space Grotesk', sans-serif;
 }
-
+.footer-top .footer-col.row3 h4 { 
+  color: #0b0b1e;           
+}
 /* LINKS */
 .footer-col ul {
   list-style: none;
@@ -1590,11 +1592,11 @@ li a {
     text-align: center;        
     margin: 0;
   }
-  .social-icons {
+  /* .social-icons {
     display: flex;
     justify-content: center;
     margin-top: 2vw;
-  }
+  } */
   .footer-bottom { 
     flex-direction: column; 
     text-align: center; 
@@ -1612,7 +1614,8 @@ li a {
     margin-left: 0;
     font-size: 24px; 
   }
-  .social-icons {justify-content: center;margin-top: 2vw;margin-left: -554px;}
+  /* .social-icons {justify-content: center;margin-top: 2vw;margin-left: -554px;} */
+  .social-icons {margin-top: -1vh;align-self: flex-start !important; text-align: left !important;margin-left: 42px;}
   .social-icons a i {font-size: 24px;}
   .social-icons a{width: 46px;height: 46px;}
   .footer-bottom { flex-direction: column; text-align: left; gap: 1vh; }
@@ -1714,7 +1717,8 @@ li a {
   .footer-connect h4 {font-size: 7vw;text-align: center;}
   .footer-connect .join1,.footer-connect .join2 { text-align: left;margin-left: 38px;}
   /* margin-left:29rem; */
-  .social-icons {justify-content: center;margin-top: 2vw;margin-left: -533px;}
+  /* .social-icons {justify-content: center;margin-top: 2vw;margin-left: -533px;} */
+  .social-icons {margin-top: -1vh;align-self: flex-start; text-align: left;}
   /* margin-left: 29rem; */
     .footer-bottom { flex-direction: column; text-align: left; gap: 1vh; }
     .footer-bottom a { margin-left: 0; }
@@ -1821,7 +1825,7 @@ li a {
   .footer-top .footer-col:nth-child(2), .footer-top .footer-col:nth-child(3) {margin-left: 0px !important;}
     /* .footer-bottom a{gap:1vw;} */
     .footer-terms{display: flex;align-items: center;justify-content: left;gap: 4vw;flex-wrap: nowrap;}
-    .social-icons {margin-top: -1vh;margin-left: -211px; }
+   .social-icons {margin-top: -1vh;align-self: flex-start; text-align: left;}
     .footer-bottom { margin-top: 3vh; padding-top: 2vh;text-align: left; }
     .circle-icon, .circle-icon1, .circle-icon2 { width: 12vw; height: 12vw; max-width: 12vw !important; max-height: 12vw !important; font-size: 12px; }
     .circle-icon1.gray{width: 13vw !important; height: 13vw !important; max-width: none !important; max-height: none !important;} 
@@ -1893,10 +1897,7 @@ li a {
   .footer-top .footer-col:nth-child(2), .footer-top .footer-col:nth-child(3) {margin-left: -2px;}
       .footer-connect .join1, .footer-connect .join2 {text-align: left;margin-left: 127px;}
       .footer-connect h4 { font-size: 7vw; margin-top: 0; margin-left: -165px;}
-          .social-icons {
-        margin-top: -1vh;
-        margin-left: -157px;
-    }
+    .social-icons {margin-top: -1vh;align-self: flex-start; text-align: left;}
         .cta-btn .btn-text {
         font-size: 16px;
     }
@@ -2578,10 +2579,7 @@ li a {
    .process-img{margin-top: -16vw;}
 }
 @media (max-width: 390px) {
-      .social-icons {
-        margin-top: -1vh;
-        margin-left: -182px;
-    }
+    .social-icons {margin-top: -1vh;align-self: flex-start; text-align: left;}
   .cardpt2 {
     padding: 0.55rem 0.7rem;
     gap: 0.25rem;
