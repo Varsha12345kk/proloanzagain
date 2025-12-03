@@ -1,6 +1,6 @@
 .aboutus-section {
     width: 100%;
-    color: #0b0b0b; 
+    color: #0b0b0b;
 }
 .aboutus-bg {
     background-image: url("images/about-us-bg-img.svg");
@@ -431,7 +431,7 @@
 
 @media screen and (max-width:390px){
 .leadership-section{width:95%;gap:2vh;margin:3vh auto 58vh;}
-.aboutus-title{font-size:2rem;bottom: 5vh;line-height: 5vh;white-space: normal;}
+.aboutus-title{font-size:2rem;bottom: 16px;line-height: 5vh;white-space: normal;}
 .leadership-text {
     top: 55%;
     left: 4%;
@@ -542,7 +542,7 @@
     width: 100%;
     height: 44vh;
     border-radius: 0.8rem;
-    margin-top: 62px;
+    margin-top: 67px;
   }
   .founder-content h2 {
     font-size: 1.8rem;
@@ -632,7 +632,7 @@
         width: 100%;
         height: 44vh;
         border-radius: 0.8rem;
-        margin-top: 186px;
+        margin-top: 210px;
     }
 }
 .cta-btn1.hover-in .btn-text {
