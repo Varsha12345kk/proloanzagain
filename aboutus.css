@@ -291,22 +291,41 @@
 /* 1024px */
 @media screen and (max-width:1024px){
 .aboutus-bg{height:35vh}
-.aboutus-title{font-size:3.5rem;bottom:5vh;white-space: nowrap;}
+.aboutus-title{font-size: 52px;bottom: 96px;white-space: nowrap;}
 .story-section{margin:6vh auto;padding:5vh 4vw;border-bottom-left-radius:2.5rem;border-top-right-radius:2.5rem}
-.story-heading{font-size:2.4rem;text-align:left}
-.story-text{font-size:1.4rem;line-height:2.1rem;text-align:left}
+.story-heading{font-size:48px;text-align:left}
+.story-text{font-size:24px;line-height:38px;text-align:left}
 .mission-vision-section{gap:2vw;flex-direction:column;margin:4vh auto 10vh}
 .mission-image img{width:89vw;height:57vw;}
 .yellow-dart-img img,.mountain-flag-img img{width:5rem}
 .mission-vision-text{width:90%;text-align:center}
-.mission-heading,.vision-heading{font-size:1.9rem;gap:0.4rem;justify-content:center}
-.mission-text,.vision-text{font-size:1.4rem;line-height:1.9rem;text-align:left;overflow-wrap: break-word; }
+.mission-heading,.vision-heading{font-size:36px;gap:0.4rem;justify-content:left}
+.mission-text,.vision-text{font-size:24px;line-height:1.9rem;text-align:left;overflow-wrap: break-word; }
 .mission-header{margin-bottom:3.5vh}
 .mission-header img,.vision-header img{width:5.4rem;margin-top:2vw;}
-.leadership-section{width:95%;gap:2.5vh;margin:4vh auto 18vh}
-.leadership-heading{font-size:3.1rem}
+.leadership-section{width: 90%;
+    max-width: 1200px;
+    margin: -30px auto 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+        align-items: baseline;
+        text-align: left !important;
+    gap: 11px;}
+.leadership-heading{font-size: 52px;text-align: left;}
 .leadership-image{height:60vh;margin-top: -14vh;}
-.leadership-text{top:65%;left:5%;right:5%;font-size:1.5rem;padding:3vw}
+.leadership-text {
+        top: 55%;
+        left: 4%;
+        right: 4%;
+        padding: 3vw;
+        font-size: 24px;
+        line-height: 36px;
+        height: auto;
+        min-height: unset;
+        bottom: auto; 
+        overflow: visible; 
+    }
 .team-section{padding:4vh 4vw}
 .team-card{width:90%}
 .image-wrapper{height:60vh}
@@ -322,22 +341,33 @@
 /* 768px */
 @media screen and (max-width:768px){
 .aboutus-bg{height:35vh}
-.aboutus-title{font-size:2.5rem;bottom:5vh;white-space: nowrap;}
+.aboutus-title{font-size: 52px;bottom: 86px;white-space: nowrap;}
 .story-section{margin:10vh auto;padding:5vh 4vw;border-bottom-left-radius:2.5rem;border-top-right-radius:2.5rem}
-.story-heading{font-size:1.9rem;text-align:left}
-.story-text{font-size:1.2rem;line-height:2rem;text-align:left}
+.story-heading{font-size: 48px;text-align:left}
+.story-text{font-size:22px;line-height:36px;text-align:left}
 .mission-vision-section{gap:2vw;flex-direction:column;margin:4vh auto 10vh}
 .mission-image img{width:89vw;height:50vw;}
 .yellow-dart-img img,.mountain-flag-img img{width:5rem}
 .mission-vision-text{width:90%;text-align:center}
-.mission-heading,.vision-heading{font-size:1.8rem;gap:0.4rem;justify-content:center}
+.mission-heading,.vision-heading{font-size:38px;gap:0.4rem;justify-content:left;}
 .mission-text,.vision-text{font-size:1.3rem;line-height:1.9rem;text-align:left;overflow-wrap: break-word; }
 .mission-header{margin-bottom:3.5vh}
 .mission-header img,.vision-header img{width:5.4rem;margin-top:4vw;}
 .leadership-section{width:95%;gap:2.5vh;margin:4vh auto 18vh}
-.leadership-heading{font-size:2.4rem}
+.leadership-heading{font-size:52px;margin-left: -326px;}
 .leadership-image{height:59vh;margin-top: -11vh;}
-.leadership-text{top:44%;left:5%;right:5%;font-size:1.2rem;padding:3vw}
+.leadership-text {
+        top: 55%;
+        left: 4%;
+        right: 4%;
+        padding: 3vw;
+        font-size: 22px;
+        line-height: 36px;
+        height: auto;
+        min-height: unset;
+        bottom: auto; 
+        overflow: visible; 
+    }
 .team-section{padding:4vh 4vw}
 .team-card{width:90%}
 .image-wrapper{height:60vh}
@@ -358,15 +388,36 @@
 .mission-image img{width:90vw;height: 75vw;}
 .yellow-dart-img img,.mountain-flag-img img{width:4.5rem}
 .mission-vision-text{width:95%;text-align:center}
-.mission-header,.vision-header{flex-direction:row;align-items:center;text-align:center;gap:3.2vh;margin-top: 24px;}
+.mission-header,.vision-header{flex-direction:row;align-items:center;text-align:center;gap:2.2vh;margin-top: 24px;}
 .vision-header{margin-top:-20px;}
 .mission-header img,.vision-header img{width:4.1rem;height:auto;margin-bottom:8vh}
-.mission-heading,.vision-heading{justify-content:center;text-align:center;margin-right: 180px;}
-.mission-text,.vision-text{font-size:18px;line-height:1.7rem;width:100%;text-align: left;overflow-wrap: break-word; }
+.mission-heading,.vision-heading{justify-content:center;text-align:center;margin-right: 180px;font-size: 32px;}
+.mission-text,.vision-text{font-size: 16px;
+        line-height: 1.5;
+        width: 100%;
+        max-width: 100%;
+        text-align: left;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-word;
+        white-space: normal;
+        padding-right: 14px; 
+        box-sizing: border-box; }
 .leadership-section{width:95%;gap:2vh;margin:3vh auto 38vh}
-.leadership-heading{font-size:38px;text-align: left;margin-left: -114px;}
+.leadership-heading{font-size:38px;text-align: left;margin-left: -112px;}
 .leadership-image{height:34vh;margin-top: -5vh;}
-.leadership-text {top: 55%;left: 4%;right: 4%;font-size: 18px;padding: 4.2vw;line-height: 28px;position: absolute;min-height: 737px;height: auto;}
+.leadership-text {
+        top: 55%;
+        left: 4%;
+        right: 4%;
+        padding: 5vw;
+        font-size: 18px;
+        line-height: 28px;
+        height: auto;
+        min-height: unset;
+        bottom: auto; 
+        overflow: visible; 
+    }
 .team-section{padding:3vh 3vw}
 .team-card{width:95%}
 .image-wrapper{height:50vh}
@@ -393,7 +444,6 @@
     height: auto;         
 }
 }
-
 @media (max-width: 1024px) {
   .founder-section {
     padding: 6vh 6vw;
@@ -410,21 +460,23 @@
     margin-top: 13vw;
   }
   .founder-content {
-    text-align: center;
+    text-align: left;
+    margin-left: -58px;
     flex: 1 1 100%;
   }
   .founder-content h2 {
-    font-size: 2.1rem;
+    font-size: 38px;
     text-align: left;
     margin-left: 4vw;
   }
   .founder-content h4 {
-    font-size: 1.4rem;
+    font-size: 28px;
     text-align: left;
     margin-left: 4vw;
   }
   .founder-content p {
-    font-size: 1.3rem;
+    font-size: 24px;
+    padding-right: 0px;
     padding: 0 4vw;
     text-align: left;
   }
@@ -437,7 +489,7 @@
     padding: 0vw 5vw;
   }
   .social-links a {
-    font-size: 1.2rem;
+    font-size: 24px;
   }
 }
 @media (max-width: 768px) {
@@ -446,24 +498,25 @@
   }
   .founder-image img {
     width: 100%;
-    height: 49vh;
-   margin-top: 18vw;
+    height: 73vh;
+   margin-top: 280px;
   }
   .founder-content {
     text-align: left;
     margin-left: -30px;
   }
   .founder-content h2 {
-    font-size: 1.9rem;
-    margin-left: 4vw;
+   font-size: 38px;
+    margin-left: 2vw;
   }
   .founder-content h4 {
-    font-size: 1.2rem;
-    margin-left: 4vw;
+   font-size: 26px;
+        margin-left: 2vw;
   }
   .founder-content p {
-    font-size: 1.2rem;
+    font-size: 22px;
     /* padding: 0 5vw; */
+        margin-left: -2vw;
   }
   .social-links {
     justify-content: center;
@@ -474,7 +527,7 @@
     padding: 0vw 5vw;
   }
   .social-links a {
-    font-size: 1.15rem;
+    font-size: 26px;
   }
 }
 @media (max-width: 480px) {
@@ -489,7 +542,7 @@
     width: 100%;
     height: 44vh;
     border-radius: 0.8rem;
-    margin-top: 4vh;
+    margin-top: 62px;
   }
   .founder-content h2 {
     font-size: 1.8rem;
@@ -517,7 +570,14 @@
     font-size: 1.1rem;
   }
 }
+@media (max-width: 390px) {
+    .founder-section {
+        padding: 4vh 5vw;
+        padding-top: 185px ;
+    }
+}
 @media (max-width: 360px) {
+  .leadership-heading{font-size:38px;text-align: left;margin-left: -52px;}
       .story-section {
         margin: 8vh auto;
         padding: 4vh 6vw;
@@ -556,25 +616,27 @@
         text-align: left;
         overflow-wrap: break-word; 
     }
-   .leadership-text {
-    top: 55%;
-    left: 4%;
-    right: 4%;
-    font-size: 18px;
-    padding: 4.2vw;
-    line-height: 28px;
-    position: absolute; 
-    min-height: 785px;     
-    height: auto;        
-}
+.leadership-text {
+        top: 55%;
+        left: 4%;
+        right: 4%;
+        padding: 5vw;
+        font-size: 16px;
+        line-height: 24px;
+        height: auto;
+        min-height: unset;
+        bottom: auto; 
+        overflow: visible; 
+    }
         .founder-image img {
         width: 100%;
         height: 44vh;
         border-radius: 0.8rem;
-        margin-top: 266px;
+        margin-top: 186px;
     }
 }
 .cta-btn1.hover-in .btn-text {
   animation: textHoverIn 0.3s forwards;
   color:#000000;
 }
+
