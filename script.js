@@ -197,8 +197,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const slates = Array.from(document.querySelectorAll(".slate"));
   const prevBtn = document.getElementById("slate-prev");
   const nextBtn = document.getElementById("slate-next");
+  
   if (!stack || slates.length === 0 || !prevBtn || !nextBtn) return;
+  
   let order = [0, 1, 2, 3, 4]; 
+  
   function applyPositions() {
     slates.forEach((slate) => {
       slate.classList.remove(
@@ -211,17 +214,27 @@ document.addEventListener("DOMContentLoaded", function () {
     order.forEach((slateIndex, pos) => {
       const slate = slates[slateIndex];
       slate.classList.add(`slate-pos-${pos}`);
-    });}
-  function nextSlate() {
+    });
+  }
+  
+  function nextSlate(e) {
+    if (e) e.preventDefault();
     const first = order.shift();
     order.push(first);
-    applyPositions();}
-  function prevSlate() {
+    applyPositions();
+  }
+  
+  function prevSlate(e) {
+    if (e) e.preventDefault();
     const last = order.pop();
     order.unshift(last);
     applyPositions();
   }
   nextBtn.addEventListener("click", nextSlate);
+  nextBtn.addEventListener("touchstart", nextSlate, {passive: false});
+  
   prevBtn.addEventListener("click", prevSlate);
+  prevBtn.addEventListener("touchstart", prevSlate, {passive: false});
+  
   applyPositions();
 });
