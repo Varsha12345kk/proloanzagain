@@ -380,7 +380,7 @@
 /* 480px */
 @media screen and (max-width:480px){
 .aboutus-bg{height:35vh}
-.aboutus-title{font-size:38px;bottom: 95px;line-height: 5vh;white-space: nowrap;}
+.aboutus-title{font-size:38px;bottom: 95px;line-height: 5vh;white-space: normal;}
 .story-section{margin:8vh auto;padding:3vh 7vw;border-bottom-left-radius:4rem;border-top-right-radius:4rem}
 .story-heading{font-size:32px;text-align: left;line-height: 38px;}
 .story-text{font-size:18px;line-height:30px;text-align: left;}
@@ -431,7 +431,7 @@
 
 @media screen and (max-width:390px){
 .leadership-section{width:95%;gap:2vh;margin:3vh auto 58vh;}
-.aboutus-title{font-size:2rem;bottom: 5vh;line-height: 5vh;white-space: nowrap;}
+.aboutus-title{font-size:2rem;bottom: 5vh;line-height: 5vh;white-space: normal;}
 .leadership-text {
     top: 55%;
     left: 4%;
@@ -533,7 +533,7 @@
 @media (max-width: 480px) {
   .founder-section {
     padding: 4vh 5vw;
-    padding-top: 280px;
+    padding-top: 340px;
   }
   .founder-container {
     flex-direction: column;
