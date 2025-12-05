@@ -209,6 +209,9 @@
   color: #000000;
   margin-bottom: 65px;
 }
+.founder-content:last-child {
+  margin-top: 50px;
+}
 .founder-content h2 {
   color: #002bdc;
   font-size: 42px;
