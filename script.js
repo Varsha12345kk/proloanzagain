@@ -230,6 +230,8 @@ document.addEventListener("DOMContentLoaded", function () {
     order.unshift(last);
     applyPositions();
   }
+  
+  // Add multiple event types for mobile compatibility
   nextBtn.addEventListener("click", nextSlate);
   nextBtn.addEventListener("touchstart", nextSlate, {passive: false});
   
@@ -238,3 +240,62 @@ document.addEventListener("DOMContentLoaded", function () {
   
   applyPositions();
 });
+
+
+const form = document.getElementById("loanForm");
+if (form) {
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const userInput = document.getElementById("captchaInput").value.trim();
+    const generatedCaptcha = document.getElementById("captcha").textContent.trim();
+
+    if (userInput !== generatedCaptcha) {
+      alert("Incorrect Captcha");
+      return;
+    }
+
+    const formData = new FormData(form);
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const result = await response.json();
+    if (result.success) {
+      alert("Your message has been sent successfully!");
+      form.reset();
+    } else {
+      alert("Something went wrong. Please try again.");
+    }
+  });
+}
+
+
+
+ const form2 = document.getElementById("enquiryform");
+
+form2.addEventListener("submit", async function (e) {
+  e.preventDefault(); // Prevent page reload
+
+  const formData1 = new FormData(form2);
+
+  try {
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData1
+    });
+
+    const result1 = await response.json();
+
+    if (result1.success) {
+      alert("Your message has been sent successfully!");
+      form2.reset();
+    } else {
+      alert("Something went wrong. Please try again.");
+    }
+  } catch (error) {
+    alert("Network error. Please check your connection.");
+  }
+}); 
